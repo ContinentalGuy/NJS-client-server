@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<style>
+		
+		div.container{
+			width: 100%;
+			border: 1px solid rgb(102, 102, 102);
+		}
+
+		.button {
+			background-color: rgb(255, 153, 0);
+			border: none;
+			color: white;
+			padding: 10px 25px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin 10px 0 10px 0;
+			-webkit-transition-duration: 0.4s;
+			cursor: pointer;
+			}
+		
+		.button1{
+			background-color: rgb(255, 153, 0);
+			color: white;
+		}
+		
+		.button1:hover{
+			background-color: white;
+			color: rgb(255, 153, 0);
+			box-shadow: 0 10px 5px 0 rgba(0,0,0,0.1), 0 6px 10px 0 rgba(0,0,0,0.2);
+		}
+		
+		.button2{	
+			background-color: rgb(255, 153, 0);
+			color: white;
+		}
+		
+		.button2:hover{
+			background-color: white;
+			color: rgb(255, 153, 0);
+			box-shadow: 0 10px 5px 0 rgba(0,0,0,0.1), 0 6px 10px 0 rgba(0,0,0,0.2);
+		}
+
+		
+		</style>
+
+	</head>
+	
+	<body>
+		<center>
+		
+			<header>
+				<script src = "server.js">
+				</script>
+				<h1 id="State">Server stopped.</h1>
+			</header>
+			
+			<button class="button button1" onclick = "document.getElementById('State').innerHTML = 'Server runs on port: 8080'" src = "server.js">Server</button>
+			<button class="button button2">"Connect client"</button>
+		
+		</center>
+	</body>
+</html>
