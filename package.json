@@ -1,0 +1,17 @@
+{
+
+	"name" : "Socket",
+	"version" : "0.0.1",
+	"main" : "app.js",
+	
+	"dependencies" : {
+	
+		"express" : "^3.4.4",
+		"jade" : "*",
+		"mongodb" : "^1.4.19",
+		"socket.io" : "^1.1.0",
+		"stylus" : "^0.49.1"
+	
+	}
+
+}
