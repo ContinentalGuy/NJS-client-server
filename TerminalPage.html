@@ -54,13 +54,18 @@
 		<center>
 		
 			<header>
-				<script src = "server.js">
+				<!--<script src = "server.js">
 				</script>
-				<h1 id="State">Server stopped.</h1>
+				<h1 id="State">Server stopped.</h1>-->
+				<h1 id="Ident">Session Identification</h1><br>
+				<h2 id="Annot">Insert your name</h2>
 			</header>
-			
-			<button class="button button1" onclick = "document.getElementById('State').innerHTML = 'Server runs on port: 8080'" src = "server.js">Server</button>
-			<button class="button button2">"Connect client"</button>
+			<form action = "http.10.182.117.143:6000/process_get" method = "GET">
+				ID:<input type = "text" name = "id"><br>
+				<input type = "submit" value = "Accept">
+			</form>
+			<!--<button class="button button1" onclick = "document.getElementById('State').innerHTML = 'Server runs on port: 8080'" src = "server.js">Server</button>
+			<button class="button button2">"Connect client"</button>-->
 		
 		</center>
 	</body>
